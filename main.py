@@ -174,6 +174,7 @@ def greedy_solver(target_node, vertices, adjacencies):
         if smallest == -1:
             add_prohibited(visited, prohibiteds)
             visited = [target_node]
+            distance = 0
             # No possible solution found
             if prohibiteds[0] == visited:
                 return 'Inexistent solution\n'
